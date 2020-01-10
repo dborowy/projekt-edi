@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Movies</title>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <h1>Projekt</h1>
+
+        <select id="myselect">
+            <option value="list" onclick=connect() onclick=display(URL)>Wybierz z listy:</option>
+            <option value="popular" onclick="display(URL)">Najbardziej popularne</option>
+            <option value="rate">Najwyżej oceniane</option>
+            <option value="type">Najlepsze z wybranego gatunku</option>    
+        </select>
+
+        <p id="demo"></p>
+
+        <script>
+        function connect(){
+				var method = 'GET';
+				var URL = 'https://api.themoviedb.org/3/movie/popular?api_key=4746ab2f6ae6a2d3126dc5991f8d3802&language=en-US&page=1';
+				var xhr = new XMLHttpRequest();
+				xhr.onreadystatechange = function() {display(this);};
+				xhr.open(method, URL);
+				xhr.send();
+        }
+        function display(URL){
+
+				if (URL.readyState ==4 && URL.status ==200) {
+                    var URL = 'https://api.themoviedb.org/3/movie/popular?api_key=4746ab2f6ae6a2d3126dc5991f8d3802&language=en-US&page=1';
+                    var JSON = "application/json";
+                    var x = JSON.title;
+                    document.write(x);
+				};
+            };
+        </script>
+    </body>
+</html>

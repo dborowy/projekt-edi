@@ -1,0 +1,16 @@
+Generalnie, wiem, ze stronka nie dziala xd, ale taki zarys probowalam zrobic:
+
+bedzie ta lista tam dane kategorie( wymyslimy je z mozliwosci api z tej stronki, z ktorej to robilam )
+
+I beda wyswietlac sie te dane.
+
+Dane do konta na stronce z api:
+
+https://developers.themoviedb.org
+
+https://developers.themoviedb.org/3/genres/get-movie-list
+
+nazwa: weronikajankowska
+has³o: projektEDI
+
+jak macie takie wieksze pomysly to piszcie tu, bedzie potem latwiej ogarnac niz szukac w konfie na fb :)
