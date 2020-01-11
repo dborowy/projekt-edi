@@ -14,3 +14,4 @@ nazwa: weronikajankowska
 has³o: projektEDI
 
 jak macie takie wieksze pomysly to piszcie tu, bedzie potem latwiej ogarnac niz szukac w konfie na fb :)
+drugie API: https://powietrze.gios.gov.pl/pjp/content/api
